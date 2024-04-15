@@ -55,7 +55,7 @@ const sr = ScrollReveal({
 
 })
 sr.reveal(`.home__data, .explore__data, .explore__user, .footer__container`)
-sr.reveal(`.home__card`, {delay:600, distance:'100px', inteval: 100})
-sr.reveal(`.about__data, .join__image`,  {origin:'right', delay: 800})
+sr.reveal(`.home__card`, {delay:500, distance:'100px', inteval: 100})
+sr.reveal(`.about__data, .join__image`,  {origin:'right', delay: 1000})
 sr.reveal(`.about__image, .join__data`, {origin:'left', delay: 1000})
-sr.reveal(`.popular__card`, {inteval:200})
+sr.reveal(`.popular__card`, { delay:1500})

@@ -276,6 +276,11 @@ nav {
   margin-inline: auto;
   border-radius: 5px;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+  min-height: 500px;
+  min-width: 400px;
+  object-fit: cover;
+  image-resolution: 300dpi;
+  image-rendering: auto;
 }
 
 .about__content-1 .section__subheader::after {
@@ -394,6 +399,11 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 10rem 2rem;
+  }
+  .about__container .about__image-1{
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
   }
 
   .about__image-1 {

@@ -20,8 +20,7 @@
   --biggest-font-size: 2.75rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
-  --h3-font-size: 0.75rem;
-  --h4-font-size: 0.5rem;
+  --h3-font-size: 1rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
@@ -225,7 +224,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 800px;
+  height: 600px;
   background: linear-gradient(180deg, hsla(0,0%,0%,0)58%, hsl(0,0%,0%)78%);
 }
 .home__container{
@@ -253,7 +252,6 @@ img {
 .home__cards{
   grid-template-columns: 240px;
   justify-content: center;
-
 }
 .home__card{
   position: relative;
@@ -371,7 +369,6 @@ img {
 .popular__card .popular__title{
   font-size: var(--h3-font-size);
   margin-bottom: .5rem;
-
 }
 .popular__location{
   display: inline-flex;
@@ -695,7 +692,7 @@ img {
     margin-bottom: 2.5rem;
   }
   .home__cards{
-    grid-template-columns: repeat(4,260px);
+    grid-template-columns: repeat(4,300px);
   }
   .home__card-title{
     left: 1.5rem;
@@ -715,12 +712,24 @@ img {
 
   }
   .about__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .about__image img{
+    height: 400px;
     width: 460px;
+    object-fit: cover;
   }
   .popular__container{
     grid-template-columns: repeat(3, 300px);
     column-gap: 3rem;
     padding-top: 4rem;
+  }
+  .popular__container .popular__image img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
   }
   .popular__title{
     font-size: var(--h2-font-size);
@@ -731,6 +740,7 @@ img {
   .explore__img{
     height: 800px;
   }
+
   .explore__content{
     padding-top: 28rem;
     grid-template-columns: 670px 1fr;
@@ -751,6 +761,11 @@ img {
   }
   .join__img{
     width: 460px;
+  }
+  .join__image img{
+    width: 341px;
+    height: 341px;
+    object-fit: cover;
   }
   .join__description{
     margin-bottom: 3rem;
